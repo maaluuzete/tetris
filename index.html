@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tetris</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Tetris!</h1>
+      <div class="info">
+        <div>Pontos: <span id="score">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+        <div>Linhas: <span id="lines">0</span></div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="board" width="240" height="480"></canvas>
+
+      <aside class="side">
+        <div class="card">
+          <h3>Próxima peça</h3>
+          <canvas id="next" width="120" height="120"></canvas>
+        </div>
+        <div class="card">
+          <h3>Controles</h3>
+          <ul>
+            <li><b>←</b> ou <b>→</b> | Mover</li>
+            <li><b>↑</b> | Girar</li>
+            <li><b>↓</b> | Caída Leve</li>
+            <li><b>Espaço</b> | Caída Brusca</li>
+            <li><b>P</b> | Pausar</li>
+          </ul>
+        </div>
+        <button id="startBtn">Iniciar / Reiniciar</button>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Feito com ❤️ por <a href="https://github.com/maaluuzete" target="_blank">Malu A.A.</a>!</small>
+    </footer>
+  </div>
+
+  <script src="js/game.js" defer></script>
+</body>
+</html>
